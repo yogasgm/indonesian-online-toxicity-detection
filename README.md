@@ -57,17 +57,20 @@ We also provide processed versions of these datasets (with `-processed` suffix) 
 
 The **model/** directory contains Jupyter Notebooks for fine-tuning **IndoBERTweet** and **Indonesian RoBERTa** models. The experiments are divided into three stages:
 
-### Stage 1: Toxicity Type Classification
+### Stage 1: Toxicity Type Detection
 
-- Fine-tuning models to classify different types of toxicity (e.g., hate speech, cyberbullying, offensive language, etc.).
+- Fine-tuning IndoBERTweet and Indonesian RoBERTa for multi-label classification tasks to detect types of toxicity, such as hate speech, cyberbullying, and offensive language.
+- IndoBERTweet achieved its best results with a learning rate of 3e-5, batch size of 16, and 2 epochs, while Indonesian RoBERTa required 4 epochs for optimal performance.
 
 ### Stage 2: Targeted Audience Classification
 
-- Training models to determine the target audience of toxic comments (e.g., individuals, groups, public figures, etc.).
+- Customizing IndoBERTweet and Indonesian RoBERTa for multi-class classification to identify the target audience of toxic content, including individuals, groups, and public figures.
+- IndoBERTweet performed best with a learning rate of 3e-5, batch size of 16, and 2 epochs, while Indonesian RoBERTa showed optimal results with a learning rate of 2e-5.
 
 ### Stage 3: Topic Classification
 
-- Categorizing toxicity based on topics (e.g., politics, religion, gender issues, etc.).
+- Fine-tuning models to classify targeted toxicity topics, such as religion, race, gender, and other sensitive issues.
+- IndoBERTweet performed best with a learning rate of 5e-5, batch size of 16, and 2 epochs, whereas Indonesian RoBERTa achieved optimal results with a learning rate of 2e-5.
 
 Each stage includes multiple notebooks with different hyperparameter settings, ensuring optimal model performance.
 
@@ -76,9 +79,6 @@ Each stage includes multiple notebooks with different hyperparameter settings, e
 ## Key Findings
 
 ✅ IndoBERTweet consistently outperforms Indonesian RoBERTa in all classification stages.
-✅ The best IndoBERTweet models achieve higher **precision, recall, and F1-score** than RoBERTa.
-✅ Our methodology is effective for **real-world toxicity detection**, including classifying unseen Indonesian-language content from Twitter/X.
-✅ The results contribute to **automated moderation tools** for safer online communities.
 
 ---
 
