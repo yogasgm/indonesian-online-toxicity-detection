@@ -129,4 +129,4 @@ This repository is released under the **MIT License**. You are free to use and m
 For questions or collaborations, feel free to reach out via:
 📧 Email: [yogasagamaa@gmail.com](mailto:yogasagamaa@gmail.com)
 
-🔗 LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yogasagama/)
+🔗 LinkedIn: [Yoga Sagama](https://www.linkedin.com/in/yogasagama/)
